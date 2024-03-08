@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="372dp"
+        android:layout_height="356dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178">
+
+        <ImageView
+            android:id="@+id/StegoImg"
+            android:layout_width="298dp"
+            android:layout_height="248dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/img_25" />
+
+        <TextView
+            android:id="@+id/Stego"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:letterSpacing="0"
+            android:text="StegoAnalyzer"
+            android:textColor="#000000"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/next_b"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="openActivity"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/img_26" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="260dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="72dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/Tips"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter"
+            android:gravity="top|left"
+            android:text=" Tips :"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="177dp"
+            android:layout_height="99dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_light"
+            android:gravity="left"
+            android:text="Never fall for things which look very easy to buy."
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
