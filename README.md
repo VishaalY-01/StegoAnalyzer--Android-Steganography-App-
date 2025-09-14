@@ -3,11 +3,11 @@
 
 # StegoAnalyzer - Android Steganography App 🔐📱
 
-***Secure your secrets with steganography on Android!***
-
 <span>
   <img src="https://img.shields.io/badge/Java-100%25-red?style=for-the-badge&logo=java&logoColor=white" alt="Java badge" />
 </span>
+
+***Secure your secrets with steganography on Android!***
 
 ---
 
